@@ -29,7 +29,19 @@ module.exports = {
             presets: ['@babel/preset-env']
           }
         }
-      }
+      },
+      {
+        test: /\.png?$|\.jpg$|\.gif$|\.svg$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'images/',
+              publicPath: 'images/',
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [

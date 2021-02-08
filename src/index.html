@@ -4,11 +4,180 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mój Webpack</title>
+  <title>Michał Krawczykowski - zadanie rekrutacyjne</title>
 </head>
 
 <body>
 
+  <header class="header">
+
+    <div class="container header__main-container">
+      <div class="row">
+        <div class="col-sm text-center pt-5 pb-4">
+          <h2 class="header__main-title">Lorem ipsum set dolore amet duis sir class!</h2>
+        </div>
+      </div>
+
+      <div class="row header__image-row">
+        <div class="col-sm col-md-12 col-xl-6">
+          <p class="mb-3">
+            Duis sit amet erat non velit rhoncus sollicitudin. Aenean ultrices ornare ligula, eu tristique nisi
+            tincidunt et. Ut sed
+            lacus turpis. Suspendisse tincidunt blandit mauris non aliquet. Mauris dignissim, eros ut consectetur
+            ullamcorper, magna
+            tellus cursus lorem, eget pharetra justo mauris in dui. Fusce eget mauris sit amet sapien posuere vulputate
+            eget ac
+            nunc. In vitae feugiat turpis, eget semper ipsum. Vivamus convallis ornare nisi in elementum.
+          </p>
+          <p class="header__bigger-font">Phasellus ligula justo, feugiat eget sollicitudin eu, vehicula eget massa.
+            Class aptent taciti sociosqu ad
+            litora
+            torquent per conubia nostra, per inceptos himenaeos. </p>
+        </div>
+        <div class="col-sm col-md-12 col-xl-6 d-flex justify-content-center justify-content-xl-end">
+          <img src="./images/first.jpg" alt="Jakiś alt tag" class="pt-4 pb-5 pt-xl-0 pb-xl-0 header__image">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="pt-5 pb-5 gray-background main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm text-center pb-5">
+            <h2>Jak możesz się dołożyć?</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-xl-3 pb-5 pb-xl-0">
+            <div class="main-content__number mb-3">1</div>
+            <div class="main-content__text">Vestibulum est tortor, fringilla eu imperdiet sit amet, pellentesque sed
+              ante. Praesent vel nibh vitae nisi ornare facilisis.</div>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-3 pb-5 pb-xl-0">
+            <div class="main-content__number mb-3">2</div>
+            <div class="main-content__text">Vestibulum est tortor, fringilla eu imperdiet sit amet, pellentesque sed
+              ante. Praesent vel nibh vitae nisi ornare facilisis.</div>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-3 pb-5 pb-xl-0">
+            <div class="main-content__number mb-3">3</div>
+            <div class="main-content__text">Vestibulum est tortor, fringilla eu imperdiet sit amet, pellentesque sed
+              ante. Praesent vel nibh vitae nisi ornare facilisis.</div>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-3 pb-5 pb-xl-0">
+            <div class="main-content__number mb-3">4</div>
+            <div class="main-content__text">Vestibulum est tortor, fringilla eu imperdiet sit amet, pellentesque sed
+              ante. Praesent vel nibh vitae nisi ornare facilisis.</div>
+          </div>
+        </div>
+        <div class="row mt-5 pb-5 main-content__choose">
+          <div class="col-sm text-center">
+            <h3>Wybierz kwotę</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-xl-4 d-flex justify-content-center">
+            <button class="main-content__button big-button" id="button-fifty" data-donation-value="50">50 zł</button>
+          </div>
+          <div class="col-12 col-xl-4 d-flex justify-content-center">
+            <button class="main-content__button big-button" id="button-seventy" data-donation-value="70">70 zł</button>
+          </div>
+          <div class="col-12 col-xl-4 d-flex justify-content-center">
+            <button class="main-content__button big-button" id="button-hundred" data-donation-value="100">100
+              zł</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm text-center pb-5">
+            <p><small>*Doceniamy każdą wpłatę za pośrednictwem naszej strony, jednak aby otrzymać upominek wsparcie to
+                minimum 50 zł.</small>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm text-center pb-5">
+            <h3>Dane do wysyłki</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-3"></div>
+          <div class="col-12 col-xl-6">
+            <form action="" class="form">
+              <label>
+                <input type="text" placeholder="imię i nazwisko" class="form__input">
+                <p class="form__error"></p>
+              </label>
+              <label>
+                <input type="text" placeholder="adres e-mail" class="form__input">
+                <p class="form__error"></p>
+              </label>
+              <label>
+                <input type="text" placeholder="telefon" class="form__input">
+                <p class="form__error"></p>
+              </label>
+              <label>
+                <input type="text" placeholder="ulica" class="form__input">
+                <p class="form__error"></p>
+              </label>
+              <label>
+                <input type="text" placeholder="miasto" class="form__input">
+                <p class="form__error"></p>
+              </label>
+              <label>
+                <input type="text" placeholder="kod pocztowy" class="form__input">
+                <p class="form__error"></p>
+              </label>
+
+              <div class="form__unique-code d-flex justify-content-center">
+                <p>Twój unikalny kod: #123456</p>
+              </div>
+              <div class="form__submit-button d-flex justify-content-center">
+                <input type="submit" value="Wspieram" class="form__submit small-button">
+              </div>
+
+            </form>
+          </div>
+          <div class="col-xl-3"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-2 mt-4">
+          <p>Poprzednie edycje:</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-xl-2">
+          <p>Edycja pierwsza</p>
+        </div>
+        <div class="col-12 col-xl-2">
+          <p>Edycja druga</p>
+        </div>
+        <div class="col-12 col-xl-2">
+          <p>Edycja trzecia</p>
+        </div>
+        <div class="col-12 col-xl-2 ml-auto mb-2 mt-2 d-flex">
+          <a href="#" target="_blank" class="footer__icon"><img src="./images/facebook.svg" alt="Facebook"></a>
+          <a href="#" target="_blank" class="footer__icon"><img src="./images/instagram.svg" alt="Facebook"></a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 col-md-8">
+          <p>© 2019 Nazwa firmy sp. z o.o. wszystkie prawa zastrzeżone</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <p>Polityka prywatności</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 

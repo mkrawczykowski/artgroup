@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import "bootstrap/scss/bootstrap";
+
 @import "base/reset";
 @import "base/variables";
 @import "base/global";
@@ -8,7 +10,7 @@
 @import "layout/header";
 @import "layout/footer";
 
-@import "bootstrap/scss/bootstrap";
+@import "pages/index";
 
 @media #{$large} {
   #przyklad-breakpointow-ze-zmiennymi {

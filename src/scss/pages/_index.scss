@@ -1,0 +1,81 @@
+.gray-background {
+  background: $graybackground url("../images/main-section-bg-image.svg") no-repeat left 10% bottom;
+}
+
+.main-content {
+  &__number {
+    display: block;
+    margin: 0 auto;
+    width: 88px;
+    height: 88px;
+    text-align: center;
+    background: $lightestgray;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    line-height: 88px;
+    font-size: 36px;
+    font-weight: 900;
+    font-family: "Lato", sans-serif;
+    color: $unintensivered;
+  }
+
+  &__text {
+    color: $gray;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  &__choose {
+    @media #{$medium} {
+      margin-top: 140px !important;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__button {
+    margin-bottom: 20px;
+
+    @media #{$xlarge} {
+      margin-bottom: 80px;
+    }
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(8, auto);
+
+    @media #{$medium} {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, auto);
+      column-gap: 30px;
+      row-gap: 20px;
+    }
+
+    &__input {
+      padding: 20px 20px 20px 20px;
+      width: 100%;
+      font-size: 21px;
+      border: 2px solid $anothergray;
+      color: $darkergray;
+      border-radius: 10px;
+
+      &:placeholder {
+        color: $anothergray;
+      }
+    }
+
+    &__error {
+      color: $unintensivered;
+      margin-bottom: 10px;
+    }
+
+    @media #{$medium} {
+      &__submit-button,
+      &__unique-code {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    }
+  }
+}

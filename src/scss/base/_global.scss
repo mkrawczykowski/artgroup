@@ -45,11 +45,71 @@ select {
   }
 }
 
-h1 {
-  color: red;
-  transition: 1s;
+h2 {
+  font-family: "Playfair Display", serif;
+  line-height: 43px;
+  font-size: 36px;
+  font-weight: 700;
+  color: $darkergray;
 }
 
-::placeholder {
-  color: blue;
+h3 {
+  font-family: "Playfair Display", serif;
+  line-height: 43px;
+  font-size: 27px;
+  font-weight: 400;
+  color: $darkergray;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $gray;
+}
+
+.big-button {
+  padding: 22px 84px 22px 84px;
+  font-size: 40px;
+  background-color: $graybackground;
+  font-family: "Lato", sans-serif;
+  line-height: 100%;
+  border-radius: 10px;
+  border: 4px solid $unintensivered;
+  color: $unintensivered;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $nicegreen;
+    border: 4px solid $nicegreen;
+    color: #fff;
+    transition: all 0.3s;
+  }
+}
+
+.small-button {
+  padding: 16px 44px 16px 44px;
+  font-size: 13px;
+  background-color: $nicegreen;
+  font-family: "Lato", sans-serif;
+  line-height: 100%;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 4px solid $nicegreen;
+  color: #fff;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $nicelightgreen;
+    border: 4px solid $nicelightgreen;
+    color: #fff;
+    transition: all 0.3s;
+  }
+}
+
+@media #{$xlarge} {
+  body .container {
+    max-width: 1640px;
+  }
 }
